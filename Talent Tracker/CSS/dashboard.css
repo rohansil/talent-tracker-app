@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.talent-tracker-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #8A2BE2, #4169E1);
+    color: white;
+}
+
+.logo img {
+    width: 150px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #e9e9e9;
+    padding: 20px;
+}
+
+.sidebar-button {
+    display: block;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-button.active {
+    background-color: #4169E1;
+    color: white;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters * {
+    margin-right: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-image: url('https://i.ibb.co/3sNfWrt/office-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.grid-cell {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 150px;
+}
+
+.employee-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.chatbot img {
+    width: 60px;
+    cursor: pointer;
+}

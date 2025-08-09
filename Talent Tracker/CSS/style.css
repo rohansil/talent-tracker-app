@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.landing-page {
+    background-image: url('https://i.ibb.co/3sNfWrt/office-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo img {
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-button {
+    background: linear-gradient(90deg, #8A2BE2, #4169E1);
+    color: white;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.upload-button:hover {
+    transform: scale(1.05);
+}
+
